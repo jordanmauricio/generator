@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Overlay Generator</title>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/filereader.js"></script>
+	<script src="js/imagepreview.js"></script>
+	<script>
+		$(function() {
+    		$('#preview1').imagepreview({
+        		input: '[name="testimage1"]',
+       			reset: '#reset1',
+        		preview: '#preview1'
+     		});
+ 		});
+	</script>
+
+	<style>
+		canvas {
+			max-width: 1200px;
+			height: auto;
+		}
+	</style>
+</head>
+
+<body>
+	<input type="file" name="testimage1" />
+    <input type="button" id="reset1" value="reset1" />
+    <div id="preview1"></div>
+</body>
+</html>
